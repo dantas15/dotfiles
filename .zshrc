@@ -53,25 +53,12 @@ function dcpp() {
 }
 
 #kill port
-function killport() {
+killport() {
   lsof -t -i:$1
 }
 
-# Launch program command with nvidia gpu
-# __NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia
-# alias rwithnvidia="__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia"
-# alias chrome="__NV_PRIME_RENDER_OFFLOAD=1 google-chrome-stable"
-# function rng() {
-#   if [ "$1" != "" ]
-#   then
-#     rwithnvidia $@
-#   else
-#     echo "Provide file/folder name"
-#   fi
-# }
-
 # Proton VPN
-function pvpn() {
+pvpn() {
 	protonvpn-cli $@
 }
 
@@ -87,9 +74,7 @@ alias plp="cd ~/Projects/ufla/plp"
 ## show most recent 5 commites on one line, with formatting
 alias gl5="git log -5 --graph --pretty=format:'%C(red)%h%Creset -%C(yellow)%d%Creset %s %C(green)(%cr) %C(yellow)<%an>%Creset'"
 
-alias gaa="git add ."
-alias gcam="git commit --amend --no-edit"
-
+# Haskell
 [ -f "/home/ista/.ghcup/env" ] && source "/home/ista/.ghcup/env" # ghcup-env
 
 export PATH=$HOME/.emacs.d/bin:$PATH
