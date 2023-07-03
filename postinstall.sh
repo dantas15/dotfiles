@@ -76,7 +76,9 @@ PROGRAMAS_PARA_INSTALAR=(
   v4l2loopback-utils
   unzip
   zsh
-  libu2f-udev # para funcionar com chrome
+  libu2f-udev # utilizado na instalacao do chrome
+  libfuse2 # Utilizado para instalar AppImages
+  build-essential # gcc make
 )
 
 # ---------------------------------------------------------------------- #
