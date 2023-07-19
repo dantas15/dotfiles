@@ -17,7 +17,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 
 plugins=(
   git
-  fast-syntax-highlighting
+  F-Sy-H
   zsh-autosuggestions
   asdf
 )
@@ -33,8 +33,9 @@ alias clip="xclip -sel clip"
 alias currdir="pwd | clip"
 
 
-# Java and Android Stuff
+# Mobile stuff (Android, Java, Flutter)
 export JAVA_HOME=". ~/.asdf/plugins/java/set-java-home.zsh"
+export FLUTTER_ROOT="$(asdf where flutter)"
 
 # Compile and run C++ file
 function dcpp() {
@@ -69,6 +70,8 @@ alias ufla="cd ~/Projects/ufla"
 alias estd="cd ~/Projects/ufla/ed"
 alias compjr="cd ~/Projects/ufla/compjr"
 alias plp="cd ~/Projects/ufla/plp"
+alias brain="cd ~/Documents/SecondBrain"
+alias backup="$HOME/Projects/personal/config-files-linux/backupnotes.sh"
 
 # git aliases
 ## show most recent 5 commites on one line, with formatting
