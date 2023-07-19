@@ -169,19 +169,25 @@ nautilus -q
 #Cria pastas para produtividade no nautilus
 extra_config(){
 
+# setup ssh stuff
 mkdir /home/$USER/.ssh/
 # Pegando minha config padrao para o zsh config
 curl -o /home/$USER/.ssh/config 'https://gist.githubusercontent.com/gustavod5/edc35f72b4bc3d2d29778f34cea7cb7e/raw/ccc3b866d250ce753a45460cd14662ce0a5c377a/config'
 
 
-mkdir /home/$USER/TEMP
-mkdir /home/$USER/AppImage
-mkdir /home/$USER/Videos/OBSRec
-mkdir /home/$USER/Projects
-mkdir /home/$USER/Projects/personal
-mkdir /home/$USER/Projects/work
-mkdir /home/$USER/Projects/ufla
-mkdir /home/$USER/Projects/ufla/compjr
+mkdir $HOME/TEMP
+mkdir $HOME/AppImage
+mkdir $HOME/Videos/OBSRec
+mkdir $HOME/Projects
+mkdir $HOME/Projects/personal
+mkdir $HOME/Projects/work
+mkdir $HOME/Projects/ufla
+mkdir $HOME/Projects/ufla/compjr
+
+# Sync and second brain notes
+mkdir $HOME/Documents/SecondBrain
+mkdir $HOME/Sync/backup-log
+
 
 #Adiciona atalhos ao Nautilus
 
@@ -192,6 +198,7 @@ else
     touch /home/$USER/.config/gkt-3.0/bookmarks
 fi
 
+echo "file:///home/$USER/Documents/SecondBrain 🧠 SecondBrain" >> $FILE
 echo "file:///home/$USER/Projects 🗃️ Projects" >> $FILE
 echo "file:///home/$USER/Projects/ufla 📚 UFLA" >> $FILE
 echo "file:///home/$USER/Projects/ufla/compjr 🔵 CompJr" >> $FILE
