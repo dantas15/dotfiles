@@ -211,7 +211,7 @@ just_apt_update
 add_archi386
 install_debs
 install_flatpaks
-install_snaps
+#install_snaps #currently stuck on first run, need to fix
 install_fonts
 extra_config
 apt_update
