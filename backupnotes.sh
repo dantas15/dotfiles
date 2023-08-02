@@ -21,7 +21,7 @@ if check_internet_connection; then
   {
     echo "===== Backup log for $(date +%Y-%m-%d_%H:%M:%S) ====="
     git add .
-    git commit -m "backup for $(date +%Y-%m-%d)"
+    git commit -m "backup for $(date +%Y-%m-%d_%H:%M:%S)"
     git push origin HEAD
   } >> "$LOG_FILE" 2>&1
 else
