@@ -8,7 +8,6 @@
 # sair automaticamente se encontrar algum erro
 set -e
 
-
 JETBRAINS_FONT_NAME="JetBrainsMono-2.304"
 HACK_FONT_NAME="Hack"
 
