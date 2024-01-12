@@ -11,5 +11,5 @@ sudo pacman -S git base-devel curl
 
 ## Fish shell
 1. Install [fish](https://fishshell.com/)
-2. Install [fisher](https://github.com/jorgebucaran/fisher#installation] (also install jorgebucaran's nvm.fish
+2. Install [fisher](https://github.com/jorgebucaran/fisher#installation) (also install jorgebucaran's nvm.fish
 3. Add a [theme](https://github.com/rose-pine/fish)
