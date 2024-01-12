@@ -1,0 +1,3 @@
+[includeIf "gitdir:~/www/compjr/**"]
+    path = ~/www/compjr/.gitconfig
+
