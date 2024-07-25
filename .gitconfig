@@ -1,2 +1,10 @@
-[includeIf "gitdir:~/www/compjr/**"]
-    path = ~/www/compjr/.gitconfig
+[user]
+  name = Gustavo Dantas
+  email = gusdantas15@gmail.com
+[includeIf "gitdir:~/www/work/**"]
+    path = ~/www/work/.gitconfig
+[core]
+  editor = vim
+[init]
+  defaultBranch = main
+
